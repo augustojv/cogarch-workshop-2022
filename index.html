@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Workshop on Cognitive Architectures</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body data-spy="scroll" data-target="#site-nav">
+    <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header">
+
+                <!-- logo -->
+                <div class="site-branding">
+                    <a class="logo" href="index.html">
+                        
+                        <!-- logo image  -->
+                        <!-- <img src="assets/images/logo.png" alt="Logo"> -->
+                        CogArch
+                    </a>
+                </div>
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div><!-- /.navbar-header -->
+
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <!-- navigation menu -->
+                    <li class="active"><a data-scroll href="#about">About</a></li>
+                    <li><a data-scroll href="#about">Call for Contributions</a></li>
+                    <li><a data-scroll href="#speakers">Speakers</a></li>         
+                    <li><a data-scroll href="#program">Program</a></li>
+                    <li><a data-scroll href="#org">Organizers</a></li>
+                
+                </ul>
+            </div>
+        </div><!-- /.container -->
+    </nav>
+
+    <header id="site-header" class="site-header valign-center"> 
+        <div class="intro">
+
+            <p>February 28<sup>th</sup> 2021, Seoul, South Korea (Virtual)</p>
+
+            <h1>CogArch 2021</h1>            
+            <h1>Fifth Workshop on Cognitive Architectures</h1>
+            
+            <p>In conjunction with the 27<sup>th</sup> International Symposium on<br>
+                High-Performance Computer Architecture (HPCA 2021)</p>
+            
+            <a class="btn btn-white" data-scroll href="#about">Contribute Now</a>
+
+            <a class="btn btn-white" data-scroll href="#registration">Register Now</a>
+        
+        </div>
+    </header>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <h3 class="section-title">About</h3>
+                    
+                    <p>
+                    Artificial Intelligence (AI) and Machine Learning (ML) techniques have become the de facto solution to drive human 
+                    progress and more specifically, automation. In the last years, the world’s economy is gravitating towards such industry 
+                    and the expectation of growth is not withering away. Additionally, these trends have been further exacerbated by the novel
+                    COVID-19 pandemic, which paralyzed the world’s economy and made evident the need for even more automation to provide safer 
+                    and more reliable services and also to aid in the agile discovery of life-saving drugs and vaccines. To support those kinds 
+                    of applications, cognitive architectures are designed and deployed to materialize advances in the aforementioned fields.
+                    However, although the newest cognitive designs are improving by the day, the amount of challenges ahead for cognitive 
+                    systems is still overwhelming. With existing solutions reaching functional maturity, design considerations are now 
+                    pivoting to new aspects like energy scaling, reliable operation, safety guarantees, or even security properties. 
+                    This has led to a very diverse variety of hardware and software systems, either tailored to their specific applications
+                    or designed for general-purpose usage, which calls for a wider understanding of how cognitive architecture’s design should be tackled.
+                    </p>
+                    <p>
+                    In that context, the CogArch workshop aims at bringing together the necessary know-how to design cognitive 
+                    architectures from a holistic point of view, tackling all their design considerations from the algorithms to platforms 
+                    in all the different fields that cognitive architectures will soon occupy, from autonomous cars
+                    to critical tasks in avionics or space or even personalized medicine.
+                    </p>
+                    <p>
+                    The CogArch workshop already had four successful editions, bringing together experts and knowledge on the most novel 
+                    design ideas for cognitive systems. This workshop capitalizes on synergizing industrial and academic effort in order
+                    to provide a better understanding of cognitive systems and key concepts of their design.
+                    </p>
+
+                    <h3 class="section-title multiple-title">Call for Papers</h3>
+
+                    <p>
+                      Hardware and software design considerations are gravitating towards AI applications, as those have been proven extremely
+                      useful in a wide variety of fields, from edge computing in autonomous cars to cloud-based computing for personalized medicine. 
+                      The recent years have brought about a boom in start-ups and novel platforms that constantly offer improvements in performance 
+                      and accuracy for the aforementioned applications. As this kind of cognitive architectures evolve, system designers have to 
+                      incorporate many different considerations, and this has led to a very diverse field in terms of available solutions.</p>
+
+                    <p>The CogArch workshop solicits formative ideas and new product offerings in this general space that cover all the design
+                      aspects of cognitive systems, from algorithms improving cognition to design methodologies that improve non-functional 
+                      considerations like energy efficiency, security, agile design, programmability, or reliability. </p>
+
+                    <ul class="list-arrow-right">
+                        <li>Algorithms in support of cognitive reasoning: recognition, intelligent search, diagnosis, inference and informed 
+                            decision-making.</li>
+                        <li>Swarm intelligence and distributed architectural support; brain-inspired and neural computing architectures.</li>
+                        <li> Agile design for cognitive systems.</li>
+                        <li>Prototype demonstrations of state-of-the-art cognitive computing systems.</li>
+                        <li>Accelerators and micro-architectural support for artificial intelligence.</li>
+                        <li>Approaches to reduce training time and enable faster model delivery.</li>
+                        <li>Cloud-backed autonomics and mobile cognition: architectural and OS support thereof.</li>
+                        <li>Resilient design of distributed (<em>swarm</em>) mobile AI architectures.</li>
+                        <li>Reliability and safety considerations, and security against adversarial attacks in mobile AI architectures.</li>
+                        <li>Techniques for improving energy efficiency, battery life extension and endurance in mobile AI architectures.</li>
+                        <li>Case studies and real-life demonstrations/prototypes in specific application domains: e.g. smart homes, connected
+                          cars and UAV-driven commercial services, architectures in support of AI for healthcare applications, such as medical
+                          imaging, drug discovery and smart diagnostics, as well as applications of interest to defense and homeland security.</li>
+                    </ul>
+
+                </div><!-- /.col-sm-6 -->
+
+                <div class="col-sm-6">
+
+					<p>
+                    The workshop shall consist of regular presentations and/or prototype demonstrations by authors of selected submissions.
+                    In addition, it will include invited keynotes by eminent researchers from industry and academia as well as interactive
+                    panel discussions to kindle further interest in these research topics. Submissions will be reviewed by a workshop Program 
+                    Committee, in addition to the organizers.
+                    </p>
+                    
+                    <p>
+                    Submitted manuscripts must be in English of <strong>up to 2 pages</strong> (with same
+                    <a href="https://hpca-conf.org/2021/guidelines-for-submissions/" target="_blank">formatting guidelines as main 
+                    conference</a>) indicating the type of submission: <strong>regular presentation</strong> or <strong>prototype 
+                    demonstration</strong>. Submissions should be submitted to the following <strong><a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__easychair.org_conferences_-3Fconf-3Dcogarch21&d=DwIEaQ&c=jf_iaSHvJObTbx-siA1ZOg&r=z_b-k6vrzWJLrhXssNaUr1ie2LHOBycTrph4VdWen-0&m=CJZztnQs47uKBzaDriAVPL3-ymZyI7_EbRo1L3kNVlI&s=2kN8PFuDvp5gBNvGeRjp1Q2VzDl6i7RpbqCliSO9EiQ&e=">link</a></strong>
+                  <s>by January 8<sup>th</sup></s> <strong style="color:rgb(255,0,0);">by January 22<sup>nd</sup>, 2021 (deadline extended)</strong>.
+                    <br>
+                    If you have questions regarding submission, please contact us:
+                    <a href="mailto:info@cogarchworkshop.org">info@cogarchworkshop.org</a>
+                    </p>
+
+                    <h3 class="section-title multiple-title">Call for Prototype Demonstrations</h3>
+
+                    <p>
+                    CogArch will feature a session where researchers can showcase innovative prototype demonstrations or 
+                    <i>proof-of-concept</i> designs in the cognitive architecture space. Examples of such demonstrations may include (but are 
+                    not limited to):
+                    
+                    <ul class="list-arrow-right">
+                        <li>Custom ASIC or FPGA-based demonstrations of machine learning, cognitive or neuromorphic architectures.</li>
+                        <li>Innovative implementations of state-of-the-art cognitive algorithms/applications, and the underlying 
+                            software-hardware co-design techniques.</li>
+                        <li>Demonstration of end-to-end cognitive systems comprising of edge devices backed by a cloud computing 
+                            infrastructure.</li>
+                        <li>Novel designs showcasing the adoption of emerging technologies for the design of cognitive systems.</li>
+                        <li>Tools or frameworks to aid analysis, simulation and design of cognitive systems.</li>
+                    </ul>
+
+                    Submissions for the demonstration session may be made in the form of a 2-page manuscript highlighting key features and 
+                    innovations of the prototype demonstration. Proposals accepted for demonstration during the workshop can be accompanied 
+                    by a poster/short presentation. Authors should explicitly indicate that the submission is for <strong>prototype 
+                    demonstration</strong> at submission time.
+                    </p>
+
+                    <h3 class="section-title multiple-title">Important Dates</h3>
+                      
+                    <p>
+					<ul class="list-arrow-right">
+            <li>Paper submission deadline: <s>January 8<sup>th</sup></s> <strong style="color:rgb(255,0,0);">by January 22<sup>nd</sup>, 2021 (deadline extended)</strong></li>
+						<li>Notification of acceptance: February 5<sup>th</sup>, 2021</li>
+						<li>Workshop date: February 28<sup>th</sup>, 2021</li>
+					</ul>
+                    </p>
+
+                    <h3 class="section-title multiple-title">Program Committee</h3>
+
+                    <p>
+					<ul class="list-arrow-right">
+                        <li>Roberto Gioiosa, Pacific Northwest National Laboratory</li>
+                        <li>David Trilla, IBM Research</li>
+                        <li>Augusto Vega, IBM Research</li>
+                        <li>Karthik Swaminathan, IBM Research</li>
+                        <li>Alper Buyuktosunoglu, IBM Research</li>
+                        <li>Pradip Bose, IBM Research</li>
+					</ul>
+                    </p>
+
+                </div><!-- /.col-sm-6 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+
+    <section id="important" class="section bg-image-1 facts text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+
+                    <i class="ion-ios-calendar"></i>
+                    <h3>Paper Submission Deadline<br><s>January 8<sup>th</sup></s><br>January 22<sup>nd</sup>, 2021<br>(Deadline Extended)</h3>
+                
+                </div>
+                <div class="col-sm-4">
+
+                    <i class="ion-ios-calendar"></i>
+                    <h3>Notification<br>February 5<sup>th</sup>, 2021</h3>
+                
+                </div>
+                <div class="col-sm-4">
+
+                    <i class="ion-ios-calendar"></i>
+                    <h3>Workshop date<br>February 28<sup>th</sup>, 2021</h3>
+                
+                </div>
+                <!--
+                <div class="col-sm-3">
+                
+                    <i class="ion-ios-calendar"></i>
+                    <h3>Workshop date<br>March 24<sup>th</sup>, 2018</h3>
+                
+                </div>
+                -->
+            </div><!-- row -->
+        </div><!-- container -->
+    </section>
+
+    <section id="speakers" class="section speakers">
+        <div class="container">
+			
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Invited Speakers:</h3>    
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="speaker">
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/G_Anthony_Reina.png">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="col-sm-10">
+					<h3>Federated Learning: Training Healthcare Models in a Privacy-Preserving Manner</h3>
+					<h4><a href="https://www.linkedin.com/in/skysurgery/" target="_blank">G Anthony Reina, M.D.
+						(Chief AI Architect for Health & Life Sciences at Intel Corporation) </a></h4>
+					<p>
+						Federated learning is a distributed machine learning approach that enables organizations to collaborate on projects
+						without sharing sensitive data, such as, patient records, financial data, or classified. The basic premise behind
+						federated learning is that the model moves to meet the data rather than the data moving to meet the model. Dr. Reina
+						will describe potential security gaps in federated learning and explain how trusted execution environments can help
+						mitigate these threats.
+          	  		</p> 
+				</div>
+            </div>
+			
+            <div class="row">
+                <div class="col-md-2">
+
+                    <div class="speaker">
+                        <figure>
+                            <img alt="Avatar" class="img-responsive center-block" src="assets/images/speakers/natalia.jpg" style="border-radius:50%">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="col-sm-10">
+          <h3>Extreme-Scale Deep Neural Networks: The Need for Sparsity and Flexible Hardware</h3>
+          <h4><a href="https://www.linkedin.com/in/nataliavassilieva" target="_blank">Natalia Vassilieva, Ph.D. (Technical Product Manager at Cerebras Systems)</a></h4>
+					<p>
+            Advances in Deep Learning over the past several years have demonstrated two paths to better models: scale and algorithmic innovation. Brute-force scaling of model parameter count increases model capacity, and when presented with enough training data, has shown better performance in many domains. However, the advantages of large-scale models come with price: they require a lot of compute to be trained, much more than can be delivered by a single traditional processor. Today clusters of 10s to even 1000s of processors are commonly used to train large neural networks. This approach to scaling is not sustainable. We need algorithmic innovations to find more efficient neural network architectures and training methods. This requires more flexible hardware to develop and test novel approaches. In this talk, we will look at the trends of extreme-scale deep learning models, discuss implications for hardware, and share how the Cerebras CS-1 addresses these requirements for both scale and flexibility of compute.
+          </p>
+				</div>
+			</div>
+		</div>
+    </section>
+
+    <section id="program" class="section schedule">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Program: TBD</h3>
+                    <!--
+                    <p>
+                    <table class="table table-hover">
+                      <thead class="thead-light">
+                        <tr>
+                          <th colspan=2 scope="col">Sunday February 23<sup>rd</sup>, 2020<br><em>(all times are in Pacific Time)</em></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row" class="col-md-3">8:30 - 8:45 AM</th>
+                          <td>Introduction and Welcoming Remarks</td>
+                        </tr>
+                        <tr bgcolor="#EBF5FB">
+                          <th scope="row">8:45 - 9:30 AM</th>
+                          <td><strong>Invited Talk:</strong> "Frameworks for Building Privacy-Preserving and Performing AI Systems: The Lessons Learned"<br>
+							  Dr. Rosario Cammarota <em>(Intel AI)</em></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">9:30 - 10:00 AM</th>
+                          <td>"PANTHER: A Programmable Architecture for Neural Network Training Harnessing Energy-Efficient ReRAM"<br>
+							  Aayush Ankit, Izzat El Hajj, Sai Rahul Chalamalasetti, Sapan Agarwal, Matthew Marinella, Martin Foltin,
+							  John Paul Strachan, Dejan Milojicic, Wen-mei Hwu, Kaushik Roy <em>(Purdue University)</em></td>
+                        </tr>
+                        <tr bgcolor="#FEF9E7">
+                          <th scope="row">10:00 - 10:30 AM</th>
+                          <td><i>Coffee Break</i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">10:30 - 11:00 AM</th>
+                          <td>"MASR: A Modular Accelerator for Sparse RNNs"<br>
+							  Udit Gupta, Brandon Reagan, Lillian Pentecost, Marco Donato, Thierry Tambe, Alexander M. Rush, Gu-Yeon Wei
+							  and David Brooks <em>(Harvard University)</em></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">11:00 - 11:30 AM</th>
+                          <td>"WiSEMAN: A Weightless Emotion-Driven Neural Architecture for Planning-Related Tasks"<br>
+							  Leopoldo Lusquino Filho, Aluizio Lima Filho, Felipe Fran&ccedil;a and Priscila Lima <em>(Universidade Federal do Rio de Janeiro)</em></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">11:30 AM - 12.00 PM</th>
+                          <td><strong>Demo Presentation:</strong> "Towards a General Purpose Cognitive Drone"<br>
+							  Sam Jijina, Adriana Amyette, Ramyad Hadidi and Hyesoon Kim <em>(Georgia Tech)</em></td>
+                        </tr>
+                        <tr bgcolor="#FEF9E7">
+                          <th scope="row">12:00 - 1:15 PM</th>
+                          <td><i>Lunch</i></td>
+                        </tr>
+                        <tr bgcolor="#EBF5FB">
+                          <th scope="row">1:15 - 2:00 PM</th>
+                          <td><strong>Invited Talk:</strong> <em>"On-Device AI for Augmented Reality (AR) Systems"</em><br>
+							  Dr. Yu-Hsin Chen <em>(Facebook)</em></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2:00 - 2.30 PM</th>
+                          <td><strong>Demo Presentation:</strong> "MAERI on FPGA: From Concept to Conception"<br>
+							  Yehowshua Immanuel and Tushar Krishna <em>(Georgia Tech)</em></td>
+                        </tr>
+                        <tr bgcolor="#FEF9E7">
+                          <th scope="row">2:30 - 3:00 PM</th>
+                          <td><i>Coffee Break</i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3.00 - 3.30 PM</th>
+                          <td>"Real-Time Machine Learning on TinyML Systems"<br>
+							  Bardienus Duisterhof, Srivatsan Krishnan, Jonathan Cruz, Colby Banbury, William Fu, Aleksandra Faust, Guido de Croon
+							  and Vijay Reddi <em>(Harvard University, Robotics at Google, Delft University of Technology, The University of Texas at Austin)</em></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3:30 PM</th>
+                          <td>Concluding Remarks</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    </p> -->
+                </div>
+            </div>
+    </section>
+
+    <section id="org" class="section registration">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Organizers</h3>
+                </div>
+                <div class="col-md-4">
+
+                <p>                    
+                <b><a href="" rel="nofollow" target="_blank">Roberto Gioiosa</a></b>
+                Dr. Gioiosa is a senior researcher in the HPC group and lead of the Scalable and Emerging Technologies 
+                team at Pacific Northwest National Laboratory. His current research focuses on hardware/software co-design methodologies,
+                custom AI/ML accelerator designs, and distributed software for heterogeneous systems. Currently, Dr. Gioiosa 
+                lead the DOE co-design center for AI and graph analytics (ARIAA) and leads several other co-design efforts at PNNL.
+                In the past, Dr. Gioiosa worked at LANL, BSC, IBM Watson, and ORNL. Dr. Gioiosa holds a Ph.D. from the University of Rome “Tor Vergata”.
+                </p>
+                <p>                    
+                <b><a href="" rel="nofollow" target="_blank">David Trilla</a></b>
+                is a Post-doctoral Researcher in the Efficient and Resilient Systems group at IBM T.J. Watson Research Center. 
+                His current work focuses on agile hardware architecture design. He previously worked at the Barcelona Supercomputing 
+                Center in Critical Embedded Real-Time Systems and time-randomized processors. 
+                He is in the process of getting his Ph.D. degree from the Polytechnic Univeristy of Catalonia (UPC), Spain. 
+                </p>
+                <p>
+                <b><a href="https://www.linkedin.com/in/augusto-vega-5940684" rel="nofollow" target="_blank">Augusto Vega</a> </b>is a 
+                Research Staff Member at IBM T. J. Watson Research Center involved in research and development work in the areas of 
+                highly-reliable power-efficient embedded designs, cognitive systems and mobile computing. He holds a Ph.D. degree from 
+                Polytechnic University of Catalonia (UPC), Spain.
+                </p>
+                </div>
+                <div class="col-md-4">
+                <p>                    
+                <b><a href="http://researcher.watson.ibm.com/researcher/view.php?person=us-kvswamin" rel="nofollow" 
+                target="_blank">Karthik Swaminathan</a> </b>is a Research Staff Member at IBM T. J. Watson Research Center. His research
+                interests include power-aware architectures, domain-specific accelerators and emerging device technologies in processor
+                design. He is also interested in architectures for approximate and cognitive computing, particularly in aspects related to
+                their reliability and energy efficiency. He holds a Ph.D. degree from Penn State University.
+                </p>
+                <p>
+                <b><a href="http://researcher.watson.ibm.com/researcher/view.php?person=us-alperb" rel="nofollow" target="_blank">Alper 
+                Buyuktosunoglu</a> </b>is a Research Staff Member at IBM T. J. Watson Research Center. He has been involved in research and
+                development work in support of IBM Power Systems and IBM z Systems in the area of high performance, reliability and power-aware 
+                computer architectures. He holds a Ph.D. degree from University of Rochester.
+                </p>
+                <p>
+                <b><a href="http://researcher.watson.ibm.com/researcher/view.php?person=us-pbose" rel="nofollow" target="_blank">Pradip 
+                Bose</a> </b>is a Distinguished Research Staff Member and manager of <i>Efficient and Resilient Systems</i> at IBM T. J. 
+                Watson Research Center. He has over thirty-three years of experience at IBM, and was a member of the pioneering RISC super 
+                scalar project at IBM (a pre-cursor to the first RS/6000 system product). He holds a Ph.D. degree from University of Illinois 
+                at Urbana-Champaign.
+                </p>
+                </div>
+                <div id="contact" class="col-md-4">
+                    <h4 class="section-title">Contact</h4>
+                    <ul class="list-arrow-right">
+                    <li><a href="mailto:info@cogarchworkshop.org">info@cogarchworkshop.org</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--
+    <section id="facts" class="section bg-image-1 facts text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <i class="ion-earth"></i>
+                    <h3><a href="http://researcher.watson.ibm.com/researcher/view_group_subpage.php?id=6586" rel="nofollow" target="_blank">CogArch 2015</a></h3>
+                
+                </div>
+                <div class="col-sm-6">
+
+                    <i class="ion-earth"></i>
+                    <h3><a href="http://researcher.watson.ibm.com/researcher/view_group.php?id=5848" rel="nofollow" target="_blank">CogArch 2016</h3>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+
+    <section id="links" class="section bg-image-2 facts ">
+        <div class="container">
+            <div class="row">
+				<div class="col-md-12">
+                    <h3 class="section-title">Interesting Links</h3>
+                </div>
+				<div class="col-md-3">
+                    <p>The <a href="http://www.computerhistory.org/timeline/ai-robotics/" rel="nofollow" target="_blank">AI and Robotics Timeline</a> from 1939 to date.</p>
+                </div><div class="col-md-3">
+                    <p>The <a href="http://www.ted.com/talks?sort=newest&q=ai" rel="nofollow" 
+                        target="_blank">TED Talks</a> with a variety of talks on the topic of AI.</p>
+                </div><div class="col-md-3">
+                    <p>IBM Watson in action in this <a href="https://visual-recognition-demo.mybluemix.net" rel="nofollow" target="_blank">on-line demo</a> using deep learning algorithms.</p>
+                </div><div class="col-md-3">
+                    <p>The <a href="http://research.ibm.com/cognitive-computing/" rel="nofollow" target="_blank">AI and Cognitive Computing portal</a> with the latest research activities conducted by IBM on AI.</p>
+                </div>
+
+
+        </div>
+    </section>
+
+
+    <section id="location" class="section location">
+        <div class="container">
+            <div class="row">
+			
+				<div id="registration" class="col-md-3">
+                    <h3 class="section-title">Registration</h3>
+
+                    <p>
+                    CogArch will be held in conjunction with the <b><a href="https://www.hpca-conf.org/2021/"  target="_blank">
+                    27<sup>th</sup> International Symposium on High-Performance Computer Architecture (HPCA 2021)</a></b>.
+                    Refer to the main venue to continue with the registration process.
+                    </p>
+                </div>
+
+
+                <div class="col-sm-3">
+                    <h3 class="section-title">Event Location</h3>
+                    <address>
+					  <p>Held Virtually</p>
+                    </address>
+                    
+                    <!-- <p><b><a href="https://www.hpca-conf.org/2020/venue-hotel/" target="_blank"> Check main venue site for more information.</a></b></p> -->
+
+                </div>
+                <div class="col-sm-6">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172858.7338713041!2d126.90276191242542!3d37.551494499469534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2012d5c39cf%3A0x7e11eca1405bf29b!2sSeoul%2C%20South%20Korea!5e0!3m2!1sen!2ses!4v1603287262417!5m2!1sen!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="site-footer facts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="site-info">Share this event on your social networks</p>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://twitter.com/home?status=Check%20out%20the%20Workshop%20on%20Cognitive%20Architectures%0Ahttps%3A//cogarch-workshop.org"><i class="ion-social-twitter"></i>&nbsp; Twitter</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//cogarch-workshop.org/"><i class="ion-social-facebook"></i>&nbsp; Facebook</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//cogarch-workshop.org/&title=Workshop%20on%20Cognitive%20Architectures&summary=&source="><i class="ion-social-linkedin-outline"></i>&nbsp; LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-88908704-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  
+</html>
